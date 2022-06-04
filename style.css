@@ -1,0 +1,659 @@
+        
+ body{
+    margin: 0%;
+    overflow-x: hidden;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+nav{
+    display: flex;
+    background-color: white;    
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 77px;
+    padding: 0 28px;
+    position:sticky;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#logo{
+    width: 44px;
+    cursor: pointer;
+}
+.menubar{
+    display: block;
+}
+.dropdown-parent{
+    display: inline;
+    position: relative;
+}
+.dropdown-parent:hover .dropdown-child{
+    display: block;
+}
+.menu-item{
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+    margin-right: 24px;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+
+.dropdown-child{
+    width: 100px;
+    position: absolute;
+    padding: 6px;
+    right: 10px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 2px 5px #ccc;
+    border-top: 2px solid rgb(170, 210, 54);
+    display: none;
+    margin-top:-8px;
+}
+
+.dropdown-child a{
+    text-align: center;
+    display: block;
+    padding: 4px 0px 4px 0px;
+    margin: 0%;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-child a:last-of-type{
+    border: none;
+}
+
+#buybutton{
+    color: white;
+    background-color:  rgb(170, 210, 54);
+    border: none;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 9px 34px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#landingpage{
+    background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -10px ;
+    background-position-y: 50% ;
+    height: 100vh;
+}
+
+#text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+#text-wrapper>h1{
+    font-family: 'Poppins',sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px; 
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
+}
+#text-wrapper p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px; 
+    text-align: center;
+    margin: 0px 60px;
+    line-height: 1.3;
+    padding: 60px 30px 0px 30px;
+    color: #8b8b99;   
+}
+#section2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: stretch;
+    margin: 0;
+}
+
+.section2-items{
+    width: 25%;
+    padding: 112px 48px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+#step-1{
+    background-color: #5acda6;
+}
+#step-2{
+    background-color: #91ac41;
+}
+#step-3{
+    background-color: #e4b476;
+}
+#step-4{
+    background-color: #f69dad;
+}
+#section2 i{
+    color: white;
+    font-size: 80px;
+}
+
+.section2-items:hover i{
+    transform: scale(1.2,1.2);
+    transition: 0.9s;
+}
+
+.section2-items h2{
+    font-size: 24px;    
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+}
+.section2-items p{
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+#section3{
+    background-color: #f7eee2;
+    width: 100%; 
+    padding-bottom:75px; 
+}
+
+#section3 h4{
+    font-family: 'Caveat',cursive;
+    text-align: center;
+    font-weight: 100;
+    font-size: 24px;
+    color: #91ac41;
+    margin: 0;
+    padding:70px 0px 0px 0px;
+}
+#section3 h3{
+    text-align: center;
+    font-size: 44px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+#description{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    font-weight:500;
+    letter-spacing: 0.5px;
+    color:#8b8b99;
+    margin-bottom: 55px;
+}
+#section3-itemwrapper{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: stretch;
+    margin: 0 auto;
+}
+.section3-items{
+    width: 25%;
+    text-align: center;
+    margin:0;
+}
+.icons i{
+    color: white;
+    background-color: #e3b375;
+    font-size: 60px;
+    border-radius: 50%;
+    padding: 40px;
+    margin: 0%;
+}
+.icons:hover i{
+    transform: scale(1.2,1.2);
+    transition: 0.5s ease-in;
+}
+.section3-items h5{
+    font-size: 28px;    
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+}
+.section3-items >p{
+    
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+    font-weight:500;
+    letter-spacing: 0.5px;
+    color:#8b8b99;
+}
+
+#section4 h2{
+    font-family: 'Caveat',cursive;
+    text-align: center;
+    font-weight: 100;
+    font-size: 24px;
+    color: #91ac41;
+    margin: 0;
+    padding:70px 0px 0px 0px;
+}
+#section4 h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+#shop-desc{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    font-weight:500;
+    letter-spacing: 0.5px;
+    color:#8b8b99;
+    margin-bottom: 55px;
+}
+
+#section4-itemwrapper{
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    justify-content: space-evenly;
+    padding: 30px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.section4-items{
+    width: 30%;
+    text-align: center;
+    background-color: #f5f6fb;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius:45px; ;
+    
+}
+.section4-items:hover{
+    box-shadow: 0px 3px 10px 0.1px rgb(228, 224, 224)
+}
+.section4-items img{
+    width: 80px;
+    border-radius: 50%;
+    margin-top: 40px;
+    /* padding-top:40px ; */
+}
+
+.statement{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif ;
+    font-weight:500;
+    letter-spacing: 0.5px;
+    color:#8b8b99;
+    font-style: italic;
+    padding: 20px;
+}
+
+.name{
+    font-family: 'Poppins',sans-serif;
+    font-size:16px;
+    font-weight: 600;
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+.occupation{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif ;
+    font-weight:500;
+    letter-spacing: 0.5px;
+    color:#8b8b99;
+    font-style: italic;
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#section5{
+    display: flex;
+    justify-content: stretch;
+    margin-top: 115px;
+}
+#left-section{
+    width: 67%;
+    display: inline-block;
+}
+#left-section img{
+    width: 100%;
+}
+#right-section{
+    display: inline-block;
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png');
+    width: 33%;
+    background-size: cover;
+    background-position:left;
+}
+#section5-itemwrapper{
+    margin:115px ;
+    margin-top: 45%;
+}
+#section5-itemwrapper h1{
+    font-size: 38px;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    margin: 0 0  8px;
+}
+#section5-itemwrapper p{
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    color:#8b8b99;
+    font-weight: 500;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+}
+
+#email{
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    color: #8b8b99;
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    margin-top: 60px;
+    border-radius: 4px;
+    padding: 12px;
+    display: block;
+}
+#subscribe-btn{
+    color: #8b8b99;
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#subscribe-btn:hover{
+    background-color: #e0536d;
+    color: white;
+    font-weight: 500;
+}
+#section6{
+    background-color: #f1f7f5;
+}
+#section6-itemwrapper{
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    justify-content: stretch;
+    align-items: center;
+    padding: 100px 0;
+    margin:0 auto ;
+    margin-top: 80px;
+}
+.section6-item{
+    width: 25%;
+    text-align: center;
+}
+
+.section6-item h1{
+    font-size: 44px;
+    font-weight: 600;
+    font-family:'Poppins', sans-serif;
+    margin: 0%;
+}
+
+.section6-item p{
+    font-family:'Poppins' ,sans-serif;
+    color: #38f8b8;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0%;
+}
+
+#section7-itemwrapper{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+}
+#section7 h2{
+    color: #8b8b99;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#line{
+border-bottom: 2px solid #E4B476;
+    display: inline-block;
+    width: 140px;
+    margin-bottom: 30px;
+}
+#section7 iframe{
+    width: 100%;
+    max-width: 300%;
+    height: 480px;
+    padding-bottom: 50px;
+}
+#section8-wrapper>div{
+    width: 50%;
+}
+#section8-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding:100px 0px;
+}
+.contact{
+    font-family: 'Caveat',cursive;
+    font-weight: 100;
+    font-size: 24px;
+    color: #91ac41;
+    margin: 0;
+}
+.heading{
+    font-family:'Poppins', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+}
+.description{
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    color:#8b8b99;
+    font-weight: 500;
+    letter-spacing: 0.5;
+    /* line-height: 1.6; */
+}
+
+.store{
+    font-family:'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.store-desc{
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    color:#8b8b99;
+    font-weight: 500;
+    letter-spacing: 0.5;
+    line-height:2;
+    margin-top: 0%;
+}
+
+.input{
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    color:#8b8b99;
+    /* font-weight: 500; */
+    width: 80%;
+    border: none;
+    outline: none;
+    border: 1px solid #e5e6ec;
+    padding: 20px ;
+    margin: 10px 0px;
+    border-radius: 6px;
+}
+#submit-btn{
+    color: white;
+    background-color:  rgb(170, 210, 54);
+    border: none;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    padding: 14px 14px;
+    border-radius: 4px;
+    text-align:center ;
+    width: 30%;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #232323;
+    text-align:center;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    padding: 30px;
+}
+
+@media (max-width:900px) and (min-width:68px){
+
+    .menu-item{
+        display: none;
+    }
+    .menu-item:nth-child(4){
+        display: inline-block;
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    .menu-item:nth-child(3){
+        display: inline-block;
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    #buybutton{
+        font-size: 10px;
+        padding: 9px 10px;
+        margin-right: 0%;
+    }
+    #text-wrapper>h1{
+        font-size: 28px;
+    }
+    #text-wrapper>p{
+        width: 100%;
+        box-sizing:border-box ;
+    }
+    #section2{
+        flex-direction: column;
+        width: 100%;
+    }
+    .section2-items{
+        width:100%;
+    }
+    #section3-itemwrapper{
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+    .section3-items>p{
+        font-size: 16px;
+        margin-bottom: 60px ;
+        padding: 0px 30px ;
+    }
+    .section3-items:last-of-type>p{
+        margin-bottom: 0px;
+    }
+    .section3-items{
+        width: 100%;   
+    }
+    .section3-items>h5{
+        margin:30px;
+    }
+    #section4-itemwrapper{
+        flex-direction: column;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    .section4-items{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 16px;
+        
+    }
+    #section5{
+        flex-direction: column;
+    }
+    #left-section {
+        width: 100%;
+    }
+    #left-section img{
+        width: 100%;
+    }
+    #right-section{
+        width: 100%;
+    }
+    #section5-itemwrapper{
+        margin: 16px;
+    }
+
+    #section5-otemwrapper h1{
+        font-size: 28px;
+    }
+    #secton5-itemwrapper{
+        margin:16px;
+    }
+    #section6-itemwrapper{
+        flex-direction: column;
+    }
+
+    #section7 iframe{
+        width: 90%;
+        height: 480px;
+        
+    }
+    #line{
+        margin:none;
+    }
+
+    #section8-wrapper{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+    #section8-wrapper>div{
+        width:100%;
+    }
+    #section8-wrapper > div:last-of-type{
+        width: 100%;
+    }
+    #submit-btn{
+        width: 50%;
+    }
+
+}
+       
